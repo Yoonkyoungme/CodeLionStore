@@ -1,0 +1,83 @@
+/* ---------------------
+    practice1.html의 css 
+------------------------- */
+
+.box {
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    border: 2px solid rgb(133, 131, 131);
+}
+
+.purple {
+    background-color: rgb(196, 124, 196);
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+#btn {
+    margin-top: 10px;
+}
+
+.bar {
+    margin-top: 20px;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    font-weight: bold;
+    background-color: rgb(207, 173, 238);
+    padding-top: 25px;
+}
+
+.newBar {
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    font-weight: bold;
+    background-color: rgb(246, 218, 162);
+    padding-top: 25px;
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+
+/* ---------------------
+    practice2.html의 css 
+------------------------- */
+
+ul.list {
+    margin: 0;
+    padding: 0;
+    border-bottom: 1px solid #ccc;
+}
+
+ul.list::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.tab-button {
+    display: block;
+    padding: 10px 20px;
+    float: left;
+    margin-right: -1px;
+    margin-bottom: -1px;
+    color: grey;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.tab-content {
+    display: none;
+    padding: 10px;
+}
+
+.tab-content img {
+    width: 200px;
+}
