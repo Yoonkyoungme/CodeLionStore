@@ -191,7 +191,12 @@ thisArg는 callbackFunction 안에서 사용할 this 레퍼런스를 의미한�
 <br><br>
 
 ### **6-2. useRef**
-- useRef는 리렌더링 하지 않는다. 컴포넌트의 속성만 조회&수정한다.
+- JavaScript를 사용할 때에 화면 상에서 특정 대상을 선택해야할 때가 있다. 이것을 특정 DOM을 선택한다고 얘기한다. <br>
+리액트가 아니라 Vanilla JavaScript를 쓸 때는 getElementById, querySelector 같은 selector 함수를 활용해서 선택한다.<br> 
+리액트를 사용할 때에도 아주 드물게 DOM을 직접 선택해야하는 경우가 있다. focus를 선택해주거나 두 개 컴포넌트의 싱크를 맞출 때 (pagination 등) 필요하다.<br>
+그 때 ref를 사용하고, useRef는 ref를 설정해주는 역할을 한다.
+
+- useRef는 리렌더링 하지 않는다. 컴포넌트의 속성만 조회 & 수정한다.
 
 - 참고 페이지: https://www.daleseo.com/react-hooks-use-ref/
 
@@ -207,7 +212,7 @@ thisArg는 callbackFunction 안에서 사용할 this 레퍼런스를 의미한�
 <br><br>
 
 ### **6-4. React.memo**
-- 리액트에서 부모 컴포넌트가 렌더링 될 때 해당 컴포넌트에 속하는 모든 자식 컴포넌트 또한 렌더링 된다. <br>하지만 부모 컴포넌트에서 자식 컴포넌트로 내려주는 props가 바뀌지 않았다면, 해당 자식 컴포넌트를 리 렌더링 하지 않아도 될 것이다. <br>컴포넌트에서 리 렌더링이 필요한 상황에서만 해주도록 설정을 할 수 있는데 이때 사용하는 함수가 바로 React.memo 함수이다.
+- 리액트에서 부모 컴포넌트가 렌더링 될 때 해당 컴포넌트에 속하는 모든 자식 컴포넌트 또한 렌더링 된다. <br>하지만 부모 컴포넌트에서 자식 컴포넌트로 내려주는 props가 바뀌지 않았다면, 해당 자식 컴포넌트를 리렌더링 하지 않아도 될 것이다. <br>컴포넌트에서 리렌더링이 필요한 상황에서만 해주도록 설정을 할 수 있는데 이때 사용하는 함수가 바로 React.memo 함수이다.
 
 - `const MyComponent = React.memo(function MyComponent(props) {
   /* props를 사용하여 렌더링 */
